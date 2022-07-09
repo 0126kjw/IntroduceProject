@@ -200,4 +200,17 @@ main{
         margin: 0 10%;
         padding: 20px 0;
     }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .profile img{
+        width: 80%;
+    }
+    .profile-center{
+        text-align: center;        
+    }
+    .attention-image p img{
+        width: 50%;
+        height: 100%;
+    }
   }
