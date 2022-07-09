@@ -1,0 +1,203 @@
+/* 폰트 설정 */
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+html, body {
+    font-family: "Elice Digital Baeum",sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 상단 */
+#top *{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+#top h2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#top h2 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s linear;
+}
+nav{
+    text-align: right;
+    /* width: 47%; */
+    float: right;
+
+    padding-top: 15px;
+    padding-right: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-right: 5px;
+    transition: 0.3s linear;
+    /* background-color: aquamarine; */
+}
+nav ul li a:hover, #top h2 a:hover{
+    color: rgb(102, 102, 102);
+    transform: scale(1.02);
+}
+
+/* 첫화면 */
+main{
+    clear: both;
+}
+.img-container-size{
+    position: relative;
+    width: 100%; /* 화면 크기와 동일하게 맞춰준다. 전체크기를 */
+    height: 600px;/* 높이 고정 */
+    overflow: hidden; /* 이미지의 크기가 크면 나머지 부분 삭제 */
+    /* border: 1px solid red; */
+
+    margin-top: 20px;
+}
+.img-box-center{
+    position: absolute;
+
+    width: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+
+    opacity: 0.8;
+
+}
+
+/* 프로필 화면 */
+.profile-center{
+    display: flex;
+    justify-content: center;
+    
+}
+.profile{
+    width: 300px;
+    height: 370px;
+    overflow: hidden;
+}
+.profile-text{
+    text-align: center;
+    font-size: 35px;
+    padding: 60px 0 30px 0;
+}
+.profile img{
+    width: 100%;
+    transition: 0.5s linear;
+}
+.profile img:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.content p{
+    margin-top: 10px;
+}
+
+/* 관심 직무와 목표 화면 */
+#go, #atten, #let, #fea{
+    padding-top: 60px;
+}
+.goals-text{
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+.backend-image{
+    text-align: center;
+}
+.backend-image img{
+    width: 60%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+/* 관심 분야 화면 */
+
+.attention-text{
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+.attention-image p{
+    text-align: center;
+}
+.attention-image p img{
+    width: 30%;
+    height: 100%;
+}
+
+/* 동료에게 하고싶은 말 화면*/
+#let div h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+.main-letter{
+    font-size: 20px;
+    text-align: center;
+}
+.main-letter p, .feature-text p{
+    margin: 0 20%;
+    padding: 20px 0;
+    background-color: aliceblue;
+}
+
+/* 저는 이런 사람입니다 화면 */
+#fea h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+.feature-text{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 글씨 반짝이기 */
+.blinking{
+    -webkit-animation:blink 2s ease-in-out infinite alternate;
+    -moz-animation:blink 2s ease-in-out infinite alternate;
+    animation:blink 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @media (max-width:840px){
+    .backend-image img{
+        width: 80%;
+    }
+    .main-letter p, .feature-text p{
+        margin: 0 10%;
+        padding: 20px 0;
+    }
+  }
